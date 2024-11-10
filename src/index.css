@@ -10,6 +10,7 @@
 
 body {
   font-family: "Playfair Display", serif;
+  background-color: aqua;
 }
 
 h2 {
@@ -26,6 +27,11 @@ button {
 button.primary {
   background-color: var(--green);
   color: white;
+}
+button.delete {
+  background-color: var(--green);
+  color: white;
+  margin-left: 8px;
 }
 
 .app {
@@ -96,6 +102,19 @@ input:focus {
   outline: none;
   border-bottom: 2px solid var(--green);
 }
+.plant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+  justify-content: space-around;
+}
+
+.card {
+  flex: 1 1 calc(20% - 32px); 
+  max-width: 250px; 
+  box-sizing: border-box;
+}
+
 
 .cards {
   list-style: none;
